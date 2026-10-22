@@ -1,16 +1,25 @@
 {
   "name": "dataminers-site",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
+    "start": "vite preview",
+    "format": "oxfmt",
     "lint": "oxlint",
-    "preview": "vite preview"
+    "typecheck": "tsc -b",
+    "test": "bun test",
+    "check": "oxfmt --check && oxlint && tsc -b && bun test"
   },
   "dependencies": {
+    "@fontsource-variable/jetbrains-mono": "^5.3.0",
+    "@fontsource-variable/merriweather": "^5.3.0",
+    "@fontsource-variable/valley-sans": "^5.3.1",
+    "@fontsource/dela-gothic-one": "^5.3.0",
     "animejs": "^4.5.0",
+    "lucide-react": "^1.61.0",
     "motion": "^14.5.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1"

@@ -1,10 +1,50 @@
 <!doctype html>
-<html lang="en">
+<html lang="es" data-theme="light">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>dataminers-site</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <title>
+      Dataminers · Software de iteración rápida, PoCs y procesos con AI
+    </title>
+    <meta
+      name="description"
+      content="Estudio de software de iteración rápida. Armamos pruebas de concepto, automatizamos procesos con AI y llevamos a producción lo que demuestra valor."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Dataminers · Del dato crudo al software que funciona"
+    />
+    <meta
+      property="og:description"
+      content="Pruebas de concepto, procesos con AI e iteración a producto."
+    />
+    <meta
+      name="theme-color"
+      content="#fff4e1"
+      media="(prefers-color-scheme: light)"
+    />
+    <meta
+      name="theme-color"
+      content="#1a312c"
+      media="(prefers-color-scheme: dark)"
+    />
+    <script>
+      // Paint the saved or system theme before first render (no flash).
+      ;(function () {
+        var t
+        try {
+          t = localStorage.getItem('dm-theme')
+        } catch (e) {}
+        if (t !== 'light' && t !== 'dark') {
+          t = matchMedia('(prefers-color-scheme: dark)').matches
+            ? 'dark'
+            : 'light'
+        }
+        document.documentElement.dataset.theme = t
+      })()
+    </script>
   </head>
   <body>
     <div id="root"></div>
