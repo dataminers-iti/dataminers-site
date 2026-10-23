@@ -1,0 +1,19 @@
+name: ci
+
+on:
+  push:
+  pull_request:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  check:
+    runs-on: [self-hosted, vps-dataminers]
+    steps:
+      - uses: actions/checkout@v4
+      - name: Instalar dependencias
+        run: bun install --frozen-lockfile
+      - name: formato, lint, tipos y tests
+        run: bun run check
