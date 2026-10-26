@@ -1,0 +1,24 @@
+# Dataminers
+
+> Dataminers es un estudio de software de iteración rápida. Armamos pruebas de concepto (PoCs), automatizamos procesos con AI (modelos de lenguaje, agentes y RAG) y llevamos a producción lo que demuestra valor.
+
+Sitio de una sola página. Toda la información pública está en la home. Idioma: español (rioplatense).
+
+## Servicios
+
+- [Pruebas de concepto](https://dataminers.lat/#servicios): validar una idea con código real antes de invertir en un producto entero. Una pregunta, una demo, una respuesta.
+- [Procesos con AI](https://dataminers.lat/#servicios): detectar tareas repetitivas y resolverlas con modelos de lenguaje, agentes y automatizaciones integradas a los sistemas del cliente.
+- [De PoC a producto](https://dataminers.lat/#servicios): arquitectura, tests, despliegue y monitoreo para escalar lo que funcionó.
+
+## Cómo trabajamos
+
+- [Proceso](https://dataminers.lat/#proceso): cuatro pasos (relevar, prototipar, medir, escalar). Ciclos cortos, decisiones con evidencia. Las PoCs se comparan contra el proceso actual con métricas acordadas al inicio.
+- [Manifiesto](https://dataminers.lat/#manifiesto): una PoC no es una maqueta, es una pregunta con código.
+
+## Contacto
+
+- [Contacto](https://dataminers.lat/#contacto): formulario para contar qué proceso querés validar. Respondemos con una propuesta de PoC: alcance, plazo y cómo medir si funcionó.
+
+## Optional
+
+- [Sitemap](https://dataminers.lat/sitemap.xml): mapa del sitio.
