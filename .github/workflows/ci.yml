@@ -16,4 +16,4 @@ jobs:
       - name: Instalar dependencias
         run: bun install --frozen-lockfile
       - name: formato, lint, tipos y tests
-        run: bun run check
+        run: bun run verify

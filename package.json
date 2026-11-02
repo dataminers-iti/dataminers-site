@@ -4,14 +4,15 @@
   "version": "0.2.0",
   "type": "module",
   "scripts": {
+    "prepare": "lefthook install || true",
     "dev": "vite",
     "build": "tsc -b && vite build",
     "start": "vite preview",
     "format": "oxfmt",
     "lint": "oxlint",
-    "typecheck": "tsc -b",
+    "typecheck": "bun check",
     "test": "bun test",
-    "check": "oxfmt --check && oxlint && tsc -b && bun test"
+    "verify": "oxfmt --check && oxlint && bun check && bun test"
   },
   "dependencies": {
     "@fontsource-variable/jetbrains-mono": "^5.3.0",
@@ -35,6 +36,7 @@
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
     "babel-plugin-react-compiler": "^1.0.0",
+    "lefthook": "^2.2.2",
     "oxfmt": "^0.74.0",
     "oxlint": "^1.88.0",
     "postcss": "^8.5.31",

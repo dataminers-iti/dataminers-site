@@ -7,7 +7,7 @@ Sitio de Dataminers: estudio de software de iteración rápida, PoCs y procesos 
 ```bash
 bun install
 bun run dev      # http://localhost:5173
-bun run check    # formato, lint, typecheck y tests (obligatorio antes de commitear)
+bun run verify    # formato, lint, typecheck y tests (obligatorio antes de commitear)
 bun run build    # dist/ estático
 ```
 
